@@ -1,0 +1,794 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.main{
+    background-image: url("../img/bg.png");
+    max-width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+/*меню*/
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    border-bottom: 1px solid rgb(161, 161, 161, .5)
+  }
+  .header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 2;
+  }
+  .container{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .header_body{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+    align-items: center;
+  }
+  .header_list{
+    display: flex;
+    position: relative;
+    z-index: 2;
+  }
+  .header_list li{
+    list-style: none;
+  }
+  .header_link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0px 15px;
+  }
+  .header_link:hover{
+      border-bottom: 1px solid #fff;
+      transition: .3s ease-in-out;
+  }
+  .header_burger{
+    display: none;
+  }
+  .header.scrolled{
+    background: #000;
+    transition: .9s ease-in-out;
+}
+/*заголовок первого блока*/
+.content-main{
+    padding: 20% ;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    max-width: 100%;
+}
+.it-studia{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+.main-title{
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+}
+/*общие стили для кнопки*/
+.btn{
+    width: 200px;
+    height: 45px;
+    background: #4985FF;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+}
+.btn:hover{
+    background-color: #f2f2f2;
+    color:#4985FF;
+    transition: .5s ease-in-out;
+    border: 2px solid #4985FF;
+}
+.our-progects-btn{
+    margin-top: 50px;
+}
+.services{
+    background-color: #F6F6F8;
+    padding: 100px 0px;
+}
+.mobi-app-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    color: #323232;
+    width: 73%;
+    margin: 0 auto;
+}
+.mobi-app-about{
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+    color: #999;
+    width: 67%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+.create{
+    display: flex;
+    justify-content: center;
+}
+.blok-site{
+    display: inline-flex;
+    width: 335px;
+    padding-right: 20px;
+}
+.cleate-site-foto{
+    padding: 25px;
+}
+.border{
+    border: 1px solid #E0E0E0;
+    padding: 10px;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    margin-right: 15px;
+}
+.border-2{
+    border: 1px solid #4985FF;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+.cleate-site{
+    padding-top: 45px;
+    padding-bottom: 12px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+}
+.about-site{
+    font-size: 14px;
+    line-height: 22px;
+    color: #999;
+}
+.all-servises{
+    margin-top: 55px;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+/*About ua block*/
+.about-us{
+    padding-top: 100px;
+    background-color: #E5E5E5;
+}
+.about-as-top{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 90px;
+    border-bottom: 1px solid #E0E0E0;
+}
+.aboutus-text{
+    margin-top: 50px;
+    width: 45%;
+}
+.aboutus-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    color: #323232;
+    margin-bottom: 40px;
+}
+.aboutus-item{
+    font-size: 16px;
+    line-height: 25px;
+    color: #999;
+    margin-bottom: 30px;
+}
+.about-company{
+    color: #4985FF;
+    font-weight: 500;
+}
+.about-company:hover{
+    color: tomato;
+}
+/*our projects*/
+.our-progects-block{
+    padding: 70px 0px;
+}
+.progect-card{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.our-progects{
+    display: flex;
+    justify-content: center;
+}
+.progect-num{
+    display: flex;
+    align-items: center;
+}
+.progect-num p{
+    font-size: 36px;
+    line-height: 53px;
+    color: #000;
+    padding-left: 20px;
+}
+.name-progect{
+    font-size: 16px;
+    line-height: 25px;
+    color: #999;
+}
+/*Our works block*/
+.ourworks-block{
+    background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+.ourwork-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ourwork-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    color: #fff;
+    width: 50%;
+}
+/*ourwork-examp*/
+.ourwork-exap{
+    background-color: #E5E5E5;
+}
+.our-work-info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    top: -220px;
+}
+.card-ourwork{
+    width: 350px;
+}
+.our-work-name{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 30px 0px;
+}
+.our-work-name span{
+    color: #4985FF;
+    padding-right: 5px;
+}
+.our-work-name-item{
+    font-size: 16px;
+    line-height: 25px;color: #999;
+    margin-bottom: 30px ;
+}
+.line{
+    border-bottom: 1px solid #E0E0E0;
+    position: relative;
+    height: 1px;
+    top: -85px;
+}
+/*Our Progects Section*/
+.our-progects-section{
+    background-color: #F6F6F8;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.our-progects-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    color: #000;
+}
+.our-progects-item{
+    margin-top: 80px;
+    margin-bottom: 70px;
+    font-size: 16px;
+    line-height: 25px;
+    color: #999;
+}
+.code-foto{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /*display: flex;
+    justify-content: space-between;*/
+    margin-bottom: 50px;
+}
+/*Video about our work*/
+.video-section{
+    background-image: url("../img/bg_video.png");
+    height: 570px;
+    max-width: 100%;
+    padding-top: 70px;
+    text-align: center;
+    color: #fff;
+}
+.video-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px; 
+    margin-bottom: 30px; 
+}
+.video-item{
+    font-size: 16px;
+    line-height: 25px;
+}
+.video{
+    background-image: url("../img/video.png");
+    height: 430px;
+    background-repeat: no-repeat;
+    margin: 0% 25%;
+    position: relative;
+    top: 80px;
+}
+.watch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    width: 35%;
+    height: 20%;
+    position: relative;
+    top: 35%;
+    left: 35%;
+    padding: 20px 50px;
+}
+/*Email*/
+.our-mail-block{
+    padding-top: 165px;
+    padding-bottom: 85px;
+}
+.line-bottom{
+    border-bottom: 1px solid #E0E0E0;
+    margin-bottom: 85px;
+}
+.our-mail-form{
+    text-align: center;
+}
+.our-mail-title{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+}
+.our-mail-item{
+    padding: 20px 0px 30px 0px;
+    font-size: 16px;
+    line-height: 25px;
+    color: #999;
+}
+/*form*/
+.email-input{
+    height: 45px;
+    border-radius: 100px 0px 0px 100px;
+    padding-left: 10px;
+    width: 300px;
+    font-size: 13px;
+    color: #999;
+    border-color: #F2F2F2;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    background-color: #fff;
+}
+.subscribe{
+    border-radius: 0px 100px 100px 0px;
+    height: 45px;
+    width: 150px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #4985FF;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+}
+.subscribe:hover{
+    background-color: #f2f2f2;
+    color: #4985FF;
+    border: 2px solid #4985FF;
+    transition: .4s ease-in-out;
+}
+.our-mail-regulat{
+    margin-top: 35px;
+    font-size: 13px;
+    line-height: 21px;
+    color: #999;
+}
+/*footer*/
+footer{
+    background-color: #F6F6F8;
+    padding-top: 70px;
+}
+.footer-info{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.footer-blocks{
+    margin-right: 30px;
+}
+.contact{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+    margin-bottom: 20px;
+}
+.contact-items a{
+    text-decoration: none;
+    color: #999;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 15px 0px 15px 10px;
+}
+.contact-items a:hover{
+    color: #4985FF;
+    border-bottom: 1px solid #4985FF;
+}
+.contact-items{
+    display: flex;
+}
+.line-footer{
+    margin-top: 55px;
+    border-bottom: 1px solid #E0E0E0;
+}
+.copyrite{
+    padding: 30px 0px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 21px;
+    color: #999;
+}
+
+/*медиа запросы*/
+@media (max-width: 992px){
+    .main-title{
+        font-size: 40px;
+    }
+    .our-work-info{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 10%;
+    }
+    .card-ourwork img{
+        padding-top: 5%;
+    }
+    .code-foto{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .code-foto img{
+        padding: 2% 0% 2% 20%;
+    }
+    .content-main {
+        padding: 25%;
+        width: 96%;
+    }
+    .our-progects-section{
+        padding-top: 71px;
+    }
+    .progect-num p{
+        padding-left: 7px;
+    }
+    .progect-card {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .all-servises {
+        margin-top: 55px;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+}
+@media (max-width: 815px){
+    .main-title {
+        font-size: 34px;
+    }
+    .create {
+        display: block;
+    }
+    .about-as-top {
+        display: block;
+        text-align: center;
+    }
+    .aboutus-text {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .our-work-info {
+        margin-left: 2%;
+    }
+    .our-progects-item {
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+    .code-foto img {
+        padding: 2% 0% 2% 13%;
+    }
+}
+/*медиа для меню*/
+@media (max-width:767px){
+    body.lock{
+      overflow: hidden;
+    }
+    .header_body{
+      height: 50px;
+    }
+    .header_burger{
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 20px;
+      z-index: 3;
+    }
+    .header_burger span{
+      position: absolute;
+      background-color: rgb(229, 231, 233);
+      left: 0;
+      width: 100%;
+      height: 2px;
+      top: 9px;
+      transition: all 0.3s ease 0s;
+    }
+    .header_burger::before,
+    .header_burger::after{
+      content: '';
+      background-color: rgb(229, 231, 233);
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      transition: all 0.3s ease 0s;
+    }
+    .header_burger.active span{
+      transform: scale(0);
+    }
+    .header_burger.active:before{
+      transform: rotate(45deg);
+      top: 9px;
+    }
+    .header_burger.active:after{
+      transform: rotate(-45deg);
+      bottom: 9px;
+    }
+    .header_burger::before{
+      top: 0;
+    }
+    .header_burger::after{
+      bottom: 0;
+    }
+    .header_menu{
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      padding: 70px 10px 20px 0px;
+      text-align: center;
+      overflow: auto;
+      transition: all 0.5s ease 0s;
+    }
+    .header_menu.active{
+      top: 0;
+    }
+    .header_list{
+      display: block;
+    }
+    .header_list li{
+      margin: 0px 0px 20px 0px;
+    }
+    .header_list li a{
+      color: rgb(229, 231, 233);
+    }
+    /*стили по макету*/
+    .content-main {
+        padding: 40% 10%;
+    }
+  }
+@media (max-width: 725px){
+    .our-work-info {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    .all-servises {
+        margin-left: 30%;
+        margin-right: 30%;
+        width: 40%;
+    }
+}
+@media (max-width: 700px){
+    .create {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .footer-info {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 5%;
+    }
+}
+@media(max-width: 600px){
+    .code-foto img{
+        padding: 2% 0% 2% 3%;
+    }
+    .progect-card {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+@media (max-width: 576px){
+    .content-main {
+        padding: 40% 0%;
+    }
+    .mobi-app-title {
+        font-size: 29px;
+        width: 100%;
+    }
+    .mobi-app-about {
+        width: 90%;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .aboutus-text {
+        width: 90%;
+    }
+    .aboutus-title {
+        font-size: 30px;
+    }
+    .about-as-top {
+        padding-bottom: 45px;
+    }
+    .our-progects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 15%;
+    }
+    .our-work-info {
+        margin-left: 15%;
+    }
+    .about-as-top img{
+        height: 350px;
+        width: 380px;
+    }
+    .code-foto {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .code-foto img {
+        padding: 2% 0% 2% 25%;
+    }
+    .video {
+        height: 300px;
+        margin: 15% 25%;
+    }
+    .watch {
+        border: none;
+        left: 10%;
+        padding: 20px 20px;
+    }
+}
+@media (max-width: 510px){
+    .content-main {
+        padding: 56% 0%;
+    }
+    .blok-site {
+        display: block;
+    }
+    .cleate-site {
+        padding-top: 5%;
+    }
+    .about-site{
+        margin-bottom: 5%;
+    }
+}
+@media(max-width: 450px){
+    .blok-site {
+        width: 100%;
+        padding-right: 0px;
+    }
+    .create {
+        width: 85%;
+    }
+    .ourwork-item{
+        display: block;
+    }
+    .ourwork-title {
+        font-size: 25px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .btn-ourWork{
+        width: 70%;
+        margin: 2% 15%;
+    }
+    .our-work-info {
+        margin-left: 7%;
+    }
+    .code-foto img {
+        padding: 2% 0% 2% 15%;
+    }
+    .email-input {
+        border-radius: 30px;
+    }
+    .subscribe {
+        border-radius: 30px;
+        width: 70%;
+        margin: 5% 15%;
+    }
+    .footer-info {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 20%;
+    }
+}
+@media(max-width: 400px){
+    .main-title {
+        font-size: 25px;
+    }
+    .content-main {
+        padding: 62% 0%;
+    }
+    .mobi-app-title {
+        font-size: 25px;
+    }
+    .services {
+        padding: 10% 0px;
+    }
+    .about-us {
+        padding-top: 10%;
+    }
+    .card-ourwork {
+        width: 250px;
+    }
+    .card-ourwork img{
+        width: 250px;
+    }
+    .our-work-info {
+        margin-left: 10%;
+    }
+    .our-progects-section {
+        padding: 10% 0%;
+    }
+    .video-title {
+        font-size: 30px;
+    }
+    .about-as-top img {
+        height: 320px;
+        width: 350px;
+    }
+}
+@media (max-width: 360px){
+    .about-as-top img {
+        height: 280px;
+        width: 300px;
+    }
+    .code-foto img {
+        padding: 2% 0% 2% 5%;
+    }
+    .watch {
+        display: block;
+    }
+    .email-input{
+        width: 250px;
+    }
+}
